@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz 2° Aniversario ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <section class="welcome">
+        <h1>Bienvenida, Ingrith Briyith 💖</h1>
+        <h2 class="typewriter">Feliz 2° Aniversario</h2>
+        <button onclick="scrollToContent()">Entrar</button>
+    </section>
+    <section class="music">
+        <h2>Audios de tu personaje favorito 🎧</h2>
+        <div class="audio-container">
+            <div class="audio-card">
+                <h3>Audio 1</h3>
+                <audio controls src="assets/1.mp3"></audio>
+            </div>
+            <div class="audio-card">
+                <h3>Audio 2</h3>
+                <audio controls src="assets/2.mp3"></audio>
+            </div>
+            <div class="audio-card">
+                <h3>Audio 3</h3>
+                <audio controls src="assets/3.mp3"></audio>
+            </div>
+            <div class="audio-card">
+                <h3>Audio 3</h3>
+                <audio controls src="assets/4.mp3"></audio>
+            </div>
+        </div>
+    </section>
+    <section class="story" id="content">
+        <h2>Nuestra historia 📜</h2>
+        <div class="card-container">
+            <div class="card active" id="card1">
+                <p>
+                    Esta es la crónica —porque llamarlo simplemente “historia” sería subestimar su relevancia— de dos
+                    individuos que, contra toda probabilidad estadística, entablaron una relación a distancia. Sí, a
+                    distancia, un concepto que en física se mide en metros, pero que en relaciones humanas se mide en
+                    frustración acumulada y en horas de videollamadas que agotan el ancho de banda.
+                    <br><br>
+                </p>
+                <button class="next-card-btn">Siguiente</button>
+            </div>
+
+            <div class="card" id="card2">
+                <p>
+                    El primer contacto ocurrió en algún punto indeterminado entre principios y finales de julio de 2023.
+                    Uno residía en Colombia y el otro en El Salvador. Una comparación sociopolítica entre ambos
+                    gobiernos podría extenderse mucho más que este relato… y probablemente sería más entretenida. El
+                    encuentro se dio gracias a un amigo en común con el que jugaban Valorant, un dato que, por sí solo,
+                    pone en duda la calidad de sus decisiones de vida.
+                    <br><br>
+                </p>
+                <button class="next-card-btn">Siguiente</button>
+            </div>
+
+            <div class="card" id="card3">
+                <p>
+                    Durante dos meses intercambiaron mensajes, teorías y probablemente un exceso de memes. Al final, él
+                    le pidió a ella que fueran novios… o, si nos apegamos a los hechos, fue ella quien lo propuso. Pero,
+                    por simplicidad narrativa —y para proteger el ego masculino— siempre diremos que fue él.
+                    <br><br>
+                </p>
+                <button class="next-card-btn">Siguiente</button>
+            </div>
+            <div class="card" id="card4">
+                <p>
+                    Pasaron incontables horas fantaseando con lo que harían al encontrarse físicamente: conversar cara a
+                    cara, salir juntos y, lo más perturbador de todo, realizar comportamientos socialmente aceptados
+                    pero biológicamente innecesarios, como tomarse de la mano o abrazarse. Honestamente, ¿por qué la
+                    gente disfruta el contacto físico? Es tan confuso como la preferencia de algunos por la pizza con
+                    piña.
+                    <br><br>
+                </p>
+                <button class="next-card-btn">Siguiente</button>
+            </div>
+            <div class="card" id="card5">
+                <p>
+                    Pero, como en todo experimento, hubo interferencias: discusiones, desacuerdos… y para eso Amy y yo
+                    tenemos un contrato de pareja debidamente firmado, con cláusulas, anexos y revisiones trimestrales.
+                    Ellos no lo tenían, pero lograron sobrevivir. Tras un año de relación virtual, finalmente se vieron
+                    en persona… y, aún peor, se tocaron.
+                    <br><br>
+                </p>
+                <button class="next-card-btn">Siguiente</button>
+            </div>
+            <div class="card" id="card6">
+                <p>
+                    En el mundo físico comenzaron nuevas experiencias: su primera cita —hamburguesas, aunque yo hubiera
+                    preferido pollo Thai—, accidentes memorables como cuando a ella se le cayeron las papas (altamente
+                    gracioso en términos de comedia situacional), y sí, más discusiones, pero siempre con resolución.
+                    <br><br>
+                </p>
+                <button class="next-card-btn">Siguiente</button>
+            </div>
+            <div class="card" id="card7">
+                <p>
+                    Ahora, y cito textualmente a mi yo más emocional: “No soy un experto en relaciones personales” —de
+                    hecho, la mayoría de la evidencia apunta a lo contrario—, pero incluso yo reconozco que esta
+                    relación ha superado retos considerables. Dos años juntos, separados por cientos o miles de
+                    kilómetros. La distancia no es fácil, ni siquiera para mí, que evito el contacto humano por
+                    elección, no por necesidad.
+                    <br><br>
+                </p>
+                <button class="next-card-btn">Siguiente</button>
+            </div>
+            <div class="card" id="card8">
+                <p>
+                    Eso fue… lindo. Aunque, en lo personal, yo habría omitido a Dios por no ser un factor replicable en
+                    un laboratorio.
+
+                    En fin, este es el regalo de aniversario, cortesía de Sheldon Cooper. Que la fuerza —una referencia
+                    culturalmente popular pero científicamente cuestionable— te acompañe, Ingrith Briyith.
+
+                    Bazinga.
+                    <br><br>
+                </p>
+                <button class="next-card-btn">Final</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery">
+        <h2>Galería de Recuerdos 📸</h2>
+        <div class="photos">
+            <div class="memory-card" data-image="assets/foto1.jpg">
+                <div class="card-text">Recuerdo 1</div>
+                <img src="assets/1.png" alt="Recuerdo 1" class="hidden-image">
+            </div>
+            <div class="memory-card" data-image="assets/foto2.jpg">
+                <div class="card-text">Recuerdo 2</div>
+                <img src="assets/2.png" alt="Recuerdo 2" class="hidden-image">
+            </div>
+            <div class="memory-card" data-image="assets/foto3.jpg">
+                <div class="card-text">Recuerdo 3</div>
+                <img src="assets/3.png" alt="Recuerdo 3" class="hidden-image">
+            </div>
+        </div>
+    </section>
+
+    <section class="reasons">
+        <h2>Razones por las que te amo 💌</h2>
+        <ul>
+            <li>Tu sonrisa ilumina mi día</li>
+            <li>Eres mi compañera de aventuras</li>
+            <li>Me apoyas en todo momento</li>
+        </ul>
+    </section>
+
+    <section class="counter">
+        <h2>Tiempo juntos ⏳</h2>
+        <div id="timer"></div>
+    </section>
+
+    <section class="closing">
+        <h2>Te amo, Ingrith Briyith 💕</h2>
+        <p>"La distancia nos separa por el momento, pero dos átomos pueden unirse para formar algo
+            extraordinario. Las hipótesis, con el tiempo, se convierten en teorías comprobadas… así como nuestro
+            amor será demostrado y cumplirá lo que Dios y el tiempo han destinado para nosotros."
+        </p>
+        <p><em>El Kirbys</em></p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
