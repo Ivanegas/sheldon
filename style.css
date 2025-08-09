@@ -72,8 +72,11 @@ button:hover {
     background: #a62264;
 }
 
+/* Estilos para la galería de recuerdos - Adaptado para ser más flexible */
 .gallery .photos {
     display: flex;
+    flex-wrap: wrap;
+    /* Permite que las tarjetas se envuelvan en la siguiente fila */
     justify-content: center;
     gap: 15px;
     padding: 20px;
@@ -82,6 +85,8 @@ button:hover {
 .memory-card {
     width: 300px;
     height: 300px;
+    max-width: 100%;
+    /* El ancho no excederá el 100% del contenedor en pantallas pequeñas */
     background-color: #ffe4e1;
     border-radius: 10px;
     display: flex;
@@ -92,9 +97,7 @@ button:hover {
     cursor: pointer;
     transition: transform 0.3s;
     position: relative;
-    /* Para posicionar la imagen absolutamente dentro /
-overflow: hidden; / Ocultar la imagen si se desborda inicialmente */
-    border-radius: 10px;
+    overflow: hidden;
 }
 
 .memory-card:hover {
@@ -104,7 +107,6 @@ overflow: hidden; / Ocultar la imagen si se desborda inicialmente */
 .card-text {
     text-align: center;
     z-index: 10;
-    /* Asegura que el texto esté encima de la imagen inicialmente */
 }
 
 .hidden-image {
@@ -178,7 +180,7 @@ overflow: hidden; / Ocultar la imagen si se desborda inicialmente */
     margin-bottom: 20px;
 }
 
-/* Estilos para la nueva sección de música */
+/* Estilos para la nueva sección de música - Adaptado para ser más flexible */
 .music {
     background-color: #fff0f5;
     padding: 60px 20px;
@@ -197,6 +199,8 @@ overflow: hidden; / Ocultar la imagen si se desborda inicialmente */
     border-radius: 15px;
     padding: 20px;
     width: 250px;
+    max-width: 100%;
+    /* El ancho no excederá el 100% del contenedor en pantallas pequeñas */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
 }
@@ -213,4 +217,65 @@ overflow: hidden; / Ocultar la imagen si se desborda inicialmente */
 .audio-card audio {
     width: 100%;
     margin-top: 15px;
+}
+
+/* --- Media Queries para mejorar la experiencia en dispositivos móviles --- */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+        /* Reduce el tamaño del título principal */
+    }
+
+    .typewriter {
+        font-size: 1.2em;
+        /* Reduce el tamaño del texto de la máquina de escribir */
+    }
+
+    /* Ajuste para la sección de historia */
+    .story .card-container {
+        height: auto;
+        /* Permite que la altura se ajuste automáticamente */
+        max-width: 90%;
+    }
+
+    .story .card {
+        padding: 15px;
+        /* Reduce el padding en móviles */
+        position: static;
+        /* Cambia a posición estática para que se apilen */
+        margin-bottom: 20px;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .story .card button {
+        display: none;
+        /* Oculta los botones de "Siguiente" ya que las tarjetas se mostrarán todas */
+    }
+
+    /* Ajuste para la galería de recuerdos */
+    .gallery .photos {
+        flex-direction: column;
+        /* Apila las tarjetas verticalmente */
+        align-items: center;
+    }
+
+    .memory-card {
+        width: 90%;
+        /* Las tarjetas ocuparán casi todo el ancho disponible */
+        height: 200px;
+        /* Un tamaño más adecuado para móviles */
+    }
+
+    /* Ajuste para la sección de audios */
+    .audio-container {
+        flex-direction: column;
+        /* Apila las tarjetas de audio verticalmente */
+        align-items: center;
+    }
+
+    .audio-card {
+        width: 90%;
+        /* Las tarjetas de audio ocuparán casi todo el ancho disponible */
+    }
 }
